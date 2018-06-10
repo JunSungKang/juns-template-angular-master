@@ -2,12 +2,12 @@
     {
         "title": "Login",
         "icon": "home",
-        "router": "#"
+        "router": "account/login"
     },
     {
-        "title": "Board",
+        "title": "Join",
         "icon": "home",
-        "router": "#"
+        "router": "account/join"
     },
     {
         "title": "FAQ",
