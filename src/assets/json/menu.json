@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Login",
+        "icon": "home",
+        "router": "#"
+    },
+    {
+        "title": "Board",
+        "icon": "home",
+        "router": "#"
+    },
+    {
+        "title": "FAQ",
+        "icon": "home",
+        "router": "#"
+    }
+]
