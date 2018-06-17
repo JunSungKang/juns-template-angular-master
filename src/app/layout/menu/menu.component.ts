@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class MenuComponent implements OnInit {
 
   constructor(private http: HttpClient) { }
-  private menu = undefined;
+  menu = undefined;
 
   ngOnInit() {
     this.http.get("assets/json/menu.json").subscribe(

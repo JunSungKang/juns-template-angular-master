@@ -5,13 +5,8 @@
         "router": "account/login"
     },
     {
-        "title": "Join",
+        "title": "Notice",
         "icon": "home",
-        "router": "account/join"
-    },
-    {
-        "title": "FAQ",
-        "icon": "home",
-        "router": "#"
+        "router": "notice"
     }
 ]

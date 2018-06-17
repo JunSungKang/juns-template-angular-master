@@ -5,7 +5,8 @@ import { LoginComponent } from './account/login/login.component';
  
 const routes: Routes = [
   { path: '', redirectTo: '/account/login', pathMatch: 'full' },
-  { path: 'account', loadChildren: './account/account.module#AccountModule' }
+  { path: 'account', loadChildren: './account/account.module#AccountModule' },
+  { path: 'notice', loadChildren: './notice/notice.module#NoticeModule' }
 ];
  
 @NgModule({
