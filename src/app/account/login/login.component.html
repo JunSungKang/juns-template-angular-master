@@ -1,8 +1,13 @@
-<div style="width: 400px; height: 300px; text-align: center; margin: 100px auto;">
-    <p>
-        <input type="email" placeholder="User ID"/><br/><br/>
-        <input type="password" placeholder="Password"/>
-    </p>
-    <button type="button" class="btn btn-info">Join</button>&nbsp;
-    <button type="button" class="btn btn-success">Login</button>
+<div class="col-lg-4 col-md-4 col-sm-8 col-xs-12" style="height: 300px; text-align: center; margin: 50px auto;">
+    <h1>LOGIN</h1>
+    <br/>
+    
+    <form #login="ngForm" (ngSubmit)="onSubmit(login)">
+        <p>
+            <input type="email" placeholder="User ID" name="id" [(ngModel)]="id"/><br/><br/>
+            <input type="password" placeholder="Password" name="password" [(ngModel)]="password"/>
+        </p>
+        <button class="btn btn-success">Login</button>&nbsp;
+        <button type="button" class="btn btn-info" (click)="Register()">Join</button>
+    </form>
 </div>
