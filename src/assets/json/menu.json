@@ -1,12 +1,12 @@
 [
     {
-        "title": "Login",
-        "icon": "home",
-        "router": "account/login"
-    },
-    {
         "title": "Notice",
         "icon": "home",
         "router": "notice"
+    },
+    {
+        "title": "Login",
+        "icon": "home",
+        "router": "account/login"
     }
 ]
