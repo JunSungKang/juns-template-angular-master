@@ -1,6 +1,16 @@
-<ng-container *ngFor="let item of notice">
+<ng-container *ngFor="let item of noticeView">
   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 notice-book">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="title">{{item.title}}</div>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="summary">{{item.summary}}</div>
   </div>
 </ng-container>
+
+<nav>
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" (click)="Previous()">Previous</a></li>
+      <ng-container *ngFor="let item of noticePage">
+        <li class="page-item"><a class="page-link" (click)="PageNumClick(item)">{{item}}</a></li>
+      </ng-container>
+    <li class="page-item"><a class="page-link" (click)="Next()">Next</a></li>
+  </ul>
+</nav>

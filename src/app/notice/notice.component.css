@@ -15,3 +15,12 @@
     height: 98px;
     background-color: #eee;
 }
+
+nav {
+    width: 315px;
+    margin: auto;
+}
+
+ul {
+    width: 100%;
+}
