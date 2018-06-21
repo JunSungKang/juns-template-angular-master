@@ -1,8 +1,7 @@
 .notice-book {
-    height: 150px;
+    height: 200px;
     padding: 0px;
     margin: 10px auto;
-    border: 1px dotted #000;
     background-color: #fff;
 }
 
@@ -12,7 +11,7 @@
 }
 
 #summary {
-    height: 98px;
+    height: 148px;
     background-color: #eee;
 }
 

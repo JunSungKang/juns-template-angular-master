@@ -1,7 +1,10 @@
-<ul>
-  <ng-container *ngFor="let item of menu">
-      <li>
-        <a routerLink="/{{item.router}}">{{item.title}}</a>
-      </li>
-  </ng-container>
-</ul>
+<div id="contents">
+  <img src="assets/img/logo.png" height="70px"/>
+  <ul>
+    <ng-container *ngFor="let item of menu">
+        <li>
+          <a routerLink="/{{item.router}}">{{item.title}}</a>
+        </li>
+    </ng-container>
+  </ul>
+</div>

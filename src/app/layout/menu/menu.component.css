@@ -1,11 +1,29 @@
-ul {
-    float: left;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 150px;
-    min-width: 150px;
+#contents{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    min-width: 670px;
+    height: 110px;
     background-color: #fff;
+    border-bottom: 1px solid black;
+    z-index: 5;
+}
+
+img {
+    padding: 10px;
+    display: block;
+    margin: 0px auto;
+}
+
+ul {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
 }
 
 li a {
