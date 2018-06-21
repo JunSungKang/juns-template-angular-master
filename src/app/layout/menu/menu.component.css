@@ -5,9 +5,7 @@ ul {
     padding: 0;
     width: 150px;
     min-width: 150px;
-    height: 100vh;
-    min-height: 500px;
-    background-color: #99f;
+    background-color: #fff;
 }
 
 li a {

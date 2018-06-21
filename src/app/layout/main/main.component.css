@@ -1,8 +1,9 @@
 #contents{
+    float: left;
     margin-right: 0px;
     width: calc(100% - 170px);
     min-width: 500px;
+    min-height: 100vh;
     padding: 10px;
-    position: absolute;
     left: 160px;
 }
