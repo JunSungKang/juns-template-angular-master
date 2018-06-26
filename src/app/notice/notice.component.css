@@ -1,3 +1,7 @@
+#contents {
+    width: 100%;
+}
+
 .notice-book {
     height: 200px;
     padding: 0px;
@@ -16,10 +20,10 @@
 }
 
 nav {
-    width: 315px;
-    margin: auto;
+    margin: 10px auto;
+    padding: 0px;
 }
 
 ul {
-    width: 100%;
+    float: right;
 }

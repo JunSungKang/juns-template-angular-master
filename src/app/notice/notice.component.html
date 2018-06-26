@@ -1,16 +1,18 @@
-<ng-container *ngFor="let item of noticeView">
-  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 notice-book">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="title">{{item.title}}</div>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="summary">{{item.summary}}</div>
-  </div>
-</ng-container>
+<div id="contents">
+  <ng-container *ngFor="let item of noticeView">
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 notice-book">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="title">{{item.title}}</div>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="summary">{{item.summary}}</div>
+    </div>
+  </ng-container>
 
-<nav>
-  <ul class="pagination">
-    <li class="page-item"><a class="page-link" (click)="Previous()">Previous</a></li>
+  <nav class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    <ul class="pagination">
+      <li class="page-item" id="previous"><a class="page-link" (click)="Previous()">Previous</a></li>
       <ng-container *ngFor="let item of noticePage">
-        <li class="page-item"><a class="page-link" (click)="PageNumClick(item)">{{item}}</a></li>
+        <li class="page-item" *ngIf="totalPage >= item"><a class="page-link" [ngStyle]="{'background-color': (item == currentPage) ? 'skyblue':'white'}" (click)="PageNumClick(item)">{{item}}</a></li>
       </ng-container>
-    <li class="page-item"><a class="page-link" (click)="Next()">Next</a></li>
-  </ul>
-</nav>
+      <li class="page-item" id="next"><a class="page-link" (click)="Next()">Next</a></li>
+    </ul>
+  </nav>
+</div>
