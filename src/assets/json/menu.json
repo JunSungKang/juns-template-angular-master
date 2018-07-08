@@ -2,7 +2,19 @@
     {
         "title": "Notice",
         "icon": "home",
-        "router": "notice"
+        "router": "#",
+        "submenu": [
+            {
+                "title": "Notice1",
+                "icon": "home",
+                "router": "notice"
+            },
+            {
+                "title": "Notice2",
+                "icon": "home",
+                "router": "notice"
+            }
+        ]
     },
     {
         "title": "Login",

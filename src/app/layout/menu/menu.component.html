@@ -2,8 +2,13 @@
   <img src="assets/img/logo.png" height="70px"/>
   <ul>
     <ng-container *ngFor="let item of menu">
-        <li>
+        <li class="dropdown">
           <a routerLink="/{{item.router}}">{{item.title}}</a>
+          <div class="dropdown-content" *ngIf="item.submenu">
+            <ng-container *ngFor="let subItem of item.submenu">
+              <a routerLink="/{{subItem.router}}">{{subItem.title}}</a>
+            </ng-container>
+          </div>
         </li>
     </ng-container>
   </ul>
