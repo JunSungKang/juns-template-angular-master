@@ -1,0 +1,26 @@
+<div class="row">
+    <select (change)="ChartTypeChange($event)">
+        <option value="line">Line</option>
+        <option value="bar">Bar</option>
+        <option value="pie">Pie</option>
+        <option value="doughnut">Doughnut</option>
+        <option value="radar">Radar</option>
+        <option value="polarArea">Polar</option>
+    </select>
+</div>
+
+
+<div class="row">
+    <div class="container">
+        <div class="col-sm-4 text-center">
+            <h3 class="text-center">{{pieChartType}} chart using Chartjs and Angular 7</h3>
+            <canvas baseChart
+                [data]="pieChartData"
+                [labels]="pieChartLabels"
+                [chartType]="pieChartType"
+                [options]="pieChartOptions"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)" style="width: 100%; height: 400px;"></canvas>
+        </div>
+    </div>
+</div>

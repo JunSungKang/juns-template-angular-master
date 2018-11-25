@@ -1,0 +1,9 @@
+#menubox {
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-left: 20px;
+    position: fixed;
+    top: 150px;
+}
