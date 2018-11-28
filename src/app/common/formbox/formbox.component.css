@@ -1,0 +1,21 @@
+#box {
+    width: calc( 100% - 6px );
+    border: 3px solid gray;
+    border-radius: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#title {
+    border-bottom: 2px solid gray;
+    background-color: lightgrey;
+    border-radius: 17px 17px 0px 0px;
+    min-height: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+#contents {
+    min-height: 100px;
+    padding: 10px;
+}
