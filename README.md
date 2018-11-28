@@ -7,6 +7,9 @@
 - Angular 7.1.0.
 
 > ## Update History
+> since- 2018.11.29.
+> - SessionStorage Service new update
+>
 > since- 2018.11.28.
 > - Formbox tag new update
 > - Formbox example, Blogger menu open
