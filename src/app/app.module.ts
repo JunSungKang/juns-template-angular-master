@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { LayoutModule } from './common/layout/layout.module';
-import { CommonModule } from './common/common.module';
+import { DateFormatModule } from './common/pipe';
 
 import { AppRoutingModule } from './app.routing.module';
 
@@ -12,7 +12,7 @@ import { AppRoutingModule } from './app.routing.module';
     AppComponent
   ],
   imports: [
-    BrowserModule, AppRoutingModule, LayoutModule, CommonModule
+    BrowserModule, AppRoutingModule, LayoutModule, DateFormatModule
   ],
   providers: [],
   bootstrap: [AppComponent]
