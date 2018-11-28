@@ -1,5 +1,5 @@
 #contents {
     padding: 0px;
     margin: 0px;
-    min-height: 750px;
+    min-height: calc( 100vh - 220px );
 }
