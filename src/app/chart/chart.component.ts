@@ -13,13 +13,13 @@ export class ChartComponent implements OnInit {
   }
 
   title = 'app';
-  public pieChartLabels:string[] = ["SouthKorea", "USA", "Japan", "China", "Canada"];
-  public pieChartData:number[] = [21, 39, 10, 14, 16];
-  public pieChartType:string = 'line';
-  public pieChartOptions:any = { 'backgroundColor': [ "#FF6384", "#4BC0C0", "#FFCE56", "#E7E9ED", "#36A2EB" ] };
+  public chartLabels:string[] = ["SouthKorea", "USA", "Japan", "China", "Canada"];
+  public chartData:number[] = [21, 39, 10, 14, 16];
+  public chartType:string = 'line';
+  public chartOptions:any = { 'backgroundColor': [ "#FF6384", "#4BC0C0", "#FFCE56", "#E7E9ED", "#36A2EB" ] };
   
   public ChartTypeChange(e){
-    this.pieChartType = e.target.value;
+    this.chartType = e.target.value;
   }
  
   // events on slice click
