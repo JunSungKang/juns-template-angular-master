@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
-import { DateformatPipe } from './dateformat/dateformat.pipe';
 
 @NgModule({
-  declarations: [DateformatPipe],
-  imports: [],
-  exports: [ DateformatPipe ]
+  declarations: [ ],
+  imports: [ ],
+  exports: [ ]
 })
 export class CommonModule { }
