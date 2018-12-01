@@ -1,0 +1,12 @@
+<table border={{styleOptions.borderWeight}} [ngStyle]="tableStyle">
+  <thead>
+    <th *ngFor="let item of data.th" [ngStyle]="thStyle">{{item}}</th>
+  </thead>
+  <tbody>
+      <tr *ngFor="let items of data.tr" [ngStyle]="trStyle">
+        <td *ngFor="let item of items">
+          {{item}}
+        </td>
+      </tr>
+  </tbody>
+</table>
