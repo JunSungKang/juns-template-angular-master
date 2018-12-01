@@ -7,6 +7,11 @@
 - Angular 7.1.0.
 
 > ## Update History
+> since- 2018.12.01
+> - grid tag new update
+> - grid example, grid-view menu open
+> - component path change
+>
 > since- 2018.11.29.
 > - SessionStorage Service new update
 >
