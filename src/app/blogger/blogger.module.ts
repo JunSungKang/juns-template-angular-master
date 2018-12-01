@@ -4,7 +4,7 @@ import { BloggerRoutingModule } from './blogger.routing.module';
 
 import { BloggerComponent } from './blogger.component';
 
-import { FormboxModule } from '../common/formbox/formbox.module';
+import { FormboxModule } from '../common/component';
 
 @NgModule({
   declarations: [BloggerComponent],
