@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class BloggerComponent implements OnInit {
 
   constructor() { }
-  title1 = "<h1>SAMPLE BOX1</h1>";
+  title1 = "SAMPLE BOX1";
   contents1 = "sample box contents";
 
-  title2 = "<h1>SAMPLE BOX2</h1>";
+  title2 = "SAMPLE BOX2";
   contents2 = `
     <table class='col-12'>
       <tr>
