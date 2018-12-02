@@ -19,7 +19,6 @@ export class GridViewComponent implements OnInit {
   }
 
   styleOptions = {
-    "borderWeight": 2,
     "table": {
       "width": "100%"
     },

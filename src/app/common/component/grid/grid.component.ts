@@ -19,14 +19,18 @@ export class GridComponent implements OnInit {
       this.data = { "th": [], "tr": [] };
       console.error("The '[data]' attribute of '<juns-grid>' is required.");
     }
-    if(this.styleOptions["table"]){
-      this.tableStyle = this.styleOptions["table"];
-    }
-    if(this.styleOptions["th"]){
-      this.thStyle = this.styleOptions["th"];
-    }
-    if(this.styleOptions["tr"]){
-      this.trStyle = this.styleOptions["tr"];
+
+    // When it exists Style Options 
+    if(this.styleOptions){
+      if(this.styleOptions["table"]){
+        this.tableStyle = this.styleOptions["table"];
+      }
+      if(this.styleOptions["th"]){
+        this.thStyle = this.styleOptions["th"];
+      }
+      if(this.styleOptions["tr"]){
+        this.trStyle = this.styleOptions["tr"];
+      }
     }
   }
 
