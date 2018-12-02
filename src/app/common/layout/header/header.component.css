@@ -4,5 +4,7 @@
 }
 
 #logo {
+    margin:1rem 0 0 2rem;
+    vertical-align: middle;
     float: left;
 }
