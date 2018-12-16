@@ -4,12 +4,10 @@ import { BloggerRoutingModule } from './blogger.routing.module';
 
 import { BloggerComponent } from './blogger.component';
 
-import { FormboxModule } from '../common/component';
-
 @NgModule({
   declarations: [BloggerComponent],
   imports: [
-    CommonModule, BloggerRoutingModule, FormboxModule
+    CommonModule, BloggerRoutingModule
   ]
 })
 export class BloggerModule { }
