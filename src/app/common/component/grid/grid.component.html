@@ -1,9 +1,9 @@
-<table [ngStyle]="tableStyle">
+<table>
   <thead>
-    <th *ngFor="let item of data.th" [ngStyle]="thStyle">{{item}}</th>
+    <th *ngFor="let item of data.th">{{item}}</th>
   </thead>
   <tbody>
-      <tr *ngFor="let items of data.tr" [ngStyle]="trStyle">
+      <tr *ngFor="let items of data.tr">
         <td *ngFor="let item of items">
           {{item}}
         </td>

@@ -9,27 +9,17 @@ export class GridViewComponent implements OnInit {
 
   constructor() { }
   data = {
-    "th": ["A", "B", "C", "D", "E", "F", "G"],
+    "th": ["ProductID", "ProductName", "RecipeName", "RecipeType", "Register", "CreateDate", "DeleteDate"],
     "tr": [
-      [1,1,1,1,1,1,1],
-      [2,2,2,2,2,2,2],
-      [3,3,3,3,3,3,3],
-      [4,4,4,4,4,4,4]
+      ["PRE-01", "Monitor", "AZ-01", "IN", "JSKANG", "2018.12.16.", ""],
+      ["PRE-02", "Monitor", "AZ-01", "IN", "JSKANG", "2018.12.16.", ""],
+      ["PRE-03", "Monitor", "AZ-02", "OUT", "JHKIM", "2018.12.16.", "2018.12.17."],
+      ["PRE-04", "Monitor", "AZ-02", "OUT", "JHKIM", "2018.12.16.", "2018.12.17."],
+      ["PRE-05", "Monitor", "AZ-01", "IN", "JSKANG", "2018.12.16.", ""],
+      ["PRE-06", "Monitor", "AZ-01", "IN", "JSKANG", "2018.12.16.", ""],
+      ["PRE-07", "Monitor", "AZ-01", "IN", "JSKANG", "2018.12.16.", ""],
+      ["PRE-08", "Monitor", "AZ-02", "OUT", "JHKIM", "2018.12.16.", "2018.12.17."],
     ]
-  }
-
-  styleOptions = {
-    "table": {
-      "width": "100%"
-    },
-    "th": {
-      "text-align": "center",
-      "background": "lightyellow"
-    },
-    "tr": {
-      "text-align": "center",
-      "background": "white"
-    }
   }
 
   ngOnInit() {
