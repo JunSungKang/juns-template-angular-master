@@ -1,11 +1,77 @@
-<div class="col-12">
-  <div class="row">
-    <div class="col-sm-12 col-md-6">
-      <juns-formbox [title]="title1" [contents]="contents1"></juns-formbox>
-    </div>
+<div id="contents">
+  <div class="col-12">
     
-    <div class="col-sm-12 col-md-6">
-      <juns-formbox [title]="title2" [contents]="contents2"></juns-formbox>
+    <!-- Bootstrap Card Group 1 Start -->
+    <div class="row">
+      <!-- Bootstrap Card 1 Start -->
+      <div class="col-6">
+        <div class="card well">
+          <div class="card-header"><h4>Register Form</h4></div>
+          <div class="card-body">
+
+            <form class="form-group">
+              <label for="loginId">ID</label>
+              <input type="text" class="form-control" name="loginId" id="loginId" aria-describedby="helpId" placeholder="abc@gmail.com">
+              <small id="helpId" class="form-text text-muted">Login ID (Please choose your ID in email format.)</small>
+              <br/>
+
+              <label for="loginPw">Password</label>
+              <input type="password" class="form-control" name="loginPw" id="loginPw" placeholder="your safe password">
+              <small id="helpId" class="form-text text-muted">Login Password (The password needs to be at least 8 characters.)</small>
+              <br/>
+
+              <label for="phoneNumber">Phone Number</label>
+              <input type="text" class="form-control is-valid" name="phoneNumber" id="phoneNumber">
+              <div class="invalid-feedback">This is a required detail.</div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+      <!-- Bootstrap Card 1 End -->
+
+      <!-- Bootstrap Card 2 Start -->
+      <div class="col-6">
+        <div class="card well">
+          <div class="card-header"><h4>Notice</h4></div>
+          <div class="card-body">
+
+            <p class="card-text">
+              <strong>일시: </strong> 2018. 12. 25. <br/><br/>
+              <strong>장소: </strong> 분당구청 <br/><br/>
+              <strong>내용: </strong> ooo의 xyz 박람회 <br/>
+              abcdefghijklmnopqrstuvwxyz<br/>
+              ABCDEFGHIJKLMNOPQRSTUVWXYZ
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <!-- Bootstrap Card 2 End -->
     </div>
+    <!-- Bootstrap Card Group 1 End -->
+
+
+    <!-- Bootstrap Card Group 2 Start -->
+    <div class="row">
+      <!-- Bootstrap Card 3 Start -->
+      <div class="col-12">
+        <div class="card well">
+          <div class="card-header"><h4>Alarm</h4></div>
+          <div class="card-body">
+
+              <div class="alert alert-danger" role="alert">Access fail.</div>
+              <div class="alert alert-success" role="alert">Access success.</div>
+              <div class="alert alert-warning" role="alert">Force access success.</div>
+              <div class="alert alert-success" role="alert">Access success.</div>
+              <div class="alert alert-success" role="alert">Access success.</div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Bootstrap Card 3 End -->
+    </div>
+    <!-- Bootstrap Card Group 2 End -->
+
   </div>
 </div>

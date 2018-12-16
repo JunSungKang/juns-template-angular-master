@@ -16,10 +16,18 @@ export class ChartComponent implements OnInit {
   public chartLabels:string[] = ["SouthKorea", "USA", "Japan", "China", "Canada"];
   public chartData:number[] = [21, 39, 10, 14, 16];
   public chartType:string = 'line';
-  public chartOptions:any = { 'backgroundColor': [ "#FF6384", "#4BC0C0", "#FFCE56", "#E7E9ED", "#36A2EB" ] };
+  public chartOptions:any = {
+    maintainAspectRatio: false,
+    'backgroundColor': [ "#FF6384", "#4BC0C0", "#FFCE56", "#E7E9ED", "#36A2EB" ],
+    title: {
+      display: true,
+      text: '[ ' +this.chartType+ ' Chart ]'
+    }
+  };
   
   public ChartTypeChange(e){
     this.chartType = e.target.value;
+    this.chartOptions.title.text = '[ ' +this.chartType+ ' Chart ]';
   }
  
   // events on slice click
