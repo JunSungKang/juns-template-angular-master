@@ -1,11 +1,10 @@
 <table>
   <thead>
-    <th *ngFor="let item of data.th">{{item}}</th>
+    <th *ngFor="let item of data.th" [innerHTML]="item | safehtml"></th>
   </thead>
   <tbody>
       <tr *ngFor="let items of data.tr">
-        <td *ngFor="let item of items">
-          {{item}}
+        <td *ngFor="let item of items" [innerHTML]="item | safehtml">
         </td>
       </tr>
   </tbody>
