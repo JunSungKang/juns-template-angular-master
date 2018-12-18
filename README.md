@@ -7,6 +7,11 @@
 - Angular 7.1.0.
 
 > ## Update History
+> since- 2018.12.17
+> - grid design change
+> - grid data html tag patch
+> - http service add update
+>
 > since- 2018.12.01
 > - grid tag new update
 > - grid example, grid-view menu open
