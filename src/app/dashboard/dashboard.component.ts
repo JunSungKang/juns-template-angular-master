@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { HttpService } from '../common/service';
+import { DateService } from '../common/service';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,20 +11,10 @@ import { HttpService } from '../common/service';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor(private http: HttpService) { }
+  constructor(private http: HttpService, private date: DateService) { }
 
   ngOnInit() {
-    this.http.setParam({
-      "name": "jskang",
-      "age": 27
-    });
-    this.http.Get("http://api.plos.org/search?q=title:DNA",
-    (data) => {
-      console.log(data);
-    },
-    (err) => {
-      console.log(err);
-    });
+    console.log(this.date.DateWeeksRange(new Date("2018/01/01")));
   }
 
 }

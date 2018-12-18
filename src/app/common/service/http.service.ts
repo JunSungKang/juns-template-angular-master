@@ -23,6 +23,9 @@ export class HttpService {
     mHeaders.append('accept-language', 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7');
     mHeaders.append('upgrade-insecure-requests', '1');
     mHeaders.append('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.220 Whale/1.3.53.4 Safari/537.36');
+
+    // When there is no data value to be sent
+    // 전송될 데이터가 없는 경우
     if(this.param == null){
       this.param = new HttpParams();
     }
