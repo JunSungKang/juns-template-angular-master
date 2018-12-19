@@ -14,7 +14,7 @@ export class DashboardComponent implements OnInit {
   constructor(private http: HttpService, private date: DateService) { }
 
   ngOnInit() {
-    console.log(this.date.DateWeeksRange(new Date("2018/01/01")));
+    console.log();
   }
 
 }
