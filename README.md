@@ -7,6 +7,11 @@
 - Angular 7.1.0.
 
 > ## Update History
+> since- 2018.12.23
+> - board write component new update
+> - shop component new update
+> - http service remove
+>
 > since- 2018.12.19
 > - date service add update
 > - http service comment upate
