@@ -1,0 +1,25 @@
+<div id="contents">
+  <div id="title">
+    <h1>AngularEditor</h1>
+    <h6>@kolkov/angular-editor</h6>
+  </div>
+  <table class="table">
+    <tbody>
+      <tr>
+        <th scope="row">제목</th>
+        <td> <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder=""> </td>
+        <th scope="row">글쓴이</th>
+        <td style="width: 150px;">JS KANG</td>
+        <th scope="row">작성일</th>
+        <td style="width: 150px;">{{ date | dateformat: "yyyy. MM. dd." }}</td>
+      </tr>
+      <tr>
+        <td scope="row" colspan="6">
+            <angular-editor [(ngModel)]="htmlContent" [config]="editorConfig"></angular-editor>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button type="button" class="btn btn-primary" (click)="writer();" style="margin-left: 45%;">글쓰기</button>
+  <button type="button" class="btn btn-warning" style="margin-left: 1rem;">취소</button>
+</div>
