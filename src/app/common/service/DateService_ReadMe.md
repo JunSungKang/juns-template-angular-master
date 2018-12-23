@@ -45,7 +45,7 @@ DateMonthCurrent("2010-01-01");
 <br> <br>
 
 
-yearsCalc("2010-01-01");
+DateYearCurrent("2010-01-01");
 > (Korean Description) 원하는 날짜("2010-01-01")부터 현재 날짜("2017-11-13")까지 해당하는 모든 년도를 출력한다.  <br>
 > (Engular Description) Print all the years from the desired date ("2010-01-01") to the current date ("2017-11-13").  
 <br> <br>
