@@ -7,6 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'juns-template-angular7';
-  date = new Date();
   format = "yyyy/MM/dd"
 }

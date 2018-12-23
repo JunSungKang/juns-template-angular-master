@@ -4,7 +4,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { LayoutModule } from './common/layout/layout.module';
-import { DateFormatModule } from './common/pipe';
 
 import { AppRoutingModule } from './app.routing.module';
 
@@ -13,7 +12,7 @@ import { AppRoutingModule } from './app.routing.module';
     AppComponent
   ],
   imports: [
-    BrowserModule, AppRoutingModule, LayoutModule, DateFormatModule, HttpClientModule
+    BrowserModule, AppRoutingModule, LayoutModule, HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
