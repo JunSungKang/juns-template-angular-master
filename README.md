@@ -7,6 +7,10 @@
 - Angular 7.1.0.
 
 > ## Update History
+> since- 2018.12.28
+> - shop component design update
+> - footer, header, main design update
+>
 > since- 2018.12.23
 > - board write component new update
 > - shop component new update
