@@ -25,7 +25,7 @@ export class GridViewComponent implements OnInit {
   ngOnInit() {
   }
 
-  rowClick1(data) {
+  rowClick(data) {
     console.log(data);
   }
 
