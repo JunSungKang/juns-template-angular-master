@@ -3,7 +3,7 @@
     <th *ngFor="let item of data.th" [innerHTML]="item | safehtml"></th>
   </thead>
   <tbody>
-      <tr *ngFor="let items of data.tr">
+      <tr *ngFor="let items of data.tr" (click)="rowClick(items)">
         <td *ngFor="let item of items" [innerHTML]="item | safehtml">
         </td>
       </tr>
