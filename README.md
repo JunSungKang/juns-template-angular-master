@@ -1,14 +1,13 @@
 # Juns Template Angular7
 
-## Current version list (2018. 11. 25. angular 6.0. > 7.0.)
-## Current version list (2018. 08. 12. angular 7.0. > 7.3.9.)
+## Current version list (2018. 11. 25. angular 6 > angular 7)
 
 - Angular CLI 7.3.9.
 - Node 10.13.0.
 - Angular 7.2.15.
 
 > ## Update History
-> since- 2019.08.12
+> since- 2019
 > - Grid rowclick event update
 > - Dashboard view make up
 >
