@@ -1,1 +1,27 @@
-dashboard works!
+<div class="contents">
+  <div class="col-12" style="height: 250px;">
+    <div class="col-6" style="display: inline-block;">
+      <canvas baseChart
+              [data]="chartData"
+              [labels]="chartLabels"
+              [chartType]="chartType"
+              [options]="chartLineTypeOptions"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)" style="height: 250px;"></canvas>
+    </div>
+
+    <div class="col-6" style="display: inline-block;">
+      <canvas baseChart
+              [data]="chartData"
+              [labels]="chartLabels"
+              [chartType]="'pie'"
+              [options]="chartPieTypeOptions"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)" style="height: 250px;"></canvas>
+    </div>
+  </div>
+
+  <div class="col-12" style="margin-top: 80px;">
+    <juns-grid [data]="data" style="margin: auto;"></juns-grid>
+  </div>
+</div>
