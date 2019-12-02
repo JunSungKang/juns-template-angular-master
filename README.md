@@ -9,7 +9,8 @@
 
 > ## Update History
 > since- 2019.08.12
-> - grid rowclick event update
+> - Grid rowclick event update
+> - Dashboard view make up
 >
 > since- Year 2018
 > - Board write component new update
