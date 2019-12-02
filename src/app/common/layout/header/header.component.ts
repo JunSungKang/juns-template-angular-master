@@ -7,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   constructor() { }
+  keyword: string;
 
   ngOnInit() {
+  }
+
+  search() {
+    alert("[" +this.keyword+ "] 검색을 시작합니다.");
   }
 
 }

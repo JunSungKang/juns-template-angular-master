@@ -28,8 +28,8 @@
       </div>
     </li> -->
   </ul>
-  <form class="form-inline">
-    <input class="form-control col-8" type="text" placeholder="Search">
-    <button class="btn btn-outline-success col-4" type="submit">Search</button>
-  </form>
+  <div class="form-inline">
+    <input [(ngModel)]="keyword" class="form-control col-8" type="text" placeholder="Search">
+    <button class="btn btn-outline-success col-4" (click)="search()">Search</button>
+  </div>
 </nav>
