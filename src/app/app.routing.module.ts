@@ -8,7 +8,8 @@ const routes: Routes = [
     { path: 'form', loadChildren: './form/form.module#FormModule' },
     { path: 'board', loadChildren: './board/board.module#BoardModule' },
     { path: 'shop', loadChildren: './shop/shop.module#ShopModule' },
-    { path: 'grid-view', loadChildren: './grid-view/grid-view.module#GridViewModule' }
+    { path: 'grid-view', loadChildren: './grid-view/grid-view.module#GridViewModule' },
+    { path: 'flowchart', loadChildren: './flowchart/flowchart.module#FlowchartModule' }
   ];
    
   @NgModule({
