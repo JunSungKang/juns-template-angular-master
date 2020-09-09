@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+
+import { FlowchartService } from '../../common/service/flowchart/flowchart.service';
 
 @Component({
   selector: 'app-flowchart',
@@ -7,10 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FlowchartComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild('container', { static: false }) container: ElementRef;
+
+  constructor(private flowchart: FlowchartService) { }
 
   ngOnInit() {
-    
+    this.flowchart.test(this.container);
   }
 
 }
