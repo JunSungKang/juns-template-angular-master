@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DateService } from '../common/service';
+import { DateService } from '../../common/service';
 
 @Component({
   selector: 'app-dashboard',

@@ -5,7 +5,7 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 
 import { ChartsModule } from 'ng2-charts';
-import { GridModule } from '../common/component';
+import { GridModule } from '../../common/component';
 
 @NgModule({
   declarations: [DashboardComponent],

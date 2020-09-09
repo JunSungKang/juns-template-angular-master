@@ -5,7 +5,7 @@ import { BoardRoutingModule } from './board-routing.module';
 import { BoardComponent } from './board.component';
 
 import { FormsModule } from '@angular/forms';
-import { DateFormatModule } from '../common/pipe';
+import { DateFormatModule } from '../../common/pipe';
 import { AngularEditorModule } from '@kolkov/angular-editor';
 
 @NgModule({
