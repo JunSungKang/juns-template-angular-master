@@ -1,10 +1,10 @@
-# Juns Template Angular7
+# Juns Template Angular8
 
-## Current version list (2018. 11. 25. angular 6 > angular 7)
+## Current version list (2020. 09. 09. angular 7 > angular 8)
 
-- Angular CLI 7.3.9.
+- Angular CLI 8.3.23
 - Node 10.13.0.
-- Angular 7.2.15.
+- Angular 8.2.14.
 
 > ## Update History
 > since- 2019
