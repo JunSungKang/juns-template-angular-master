@@ -3,13 +3,13 @@ import { Routes, RouterModule } from "@angular/router";
 
 const routes: Routes = [
     { path: '', redirectTo: '/charts', pathMatch: 'full' },
-    { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
-    { path: 'charts', loadChildren: './chart/chart.module#ChartModule' },
-    { path: 'form', loadChildren: './form/form.module#FormModule' },
-    { path: 'board', loadChildren: './board/board.module#BoardModule' },
-    { path: 'shop', loadChildren: './shop/shop.module#ShopModule' },
-    { path: 'grid-view', loadChildren: './grid-view/grid-view.module#GridViewModule' },
-    { path: 'flowchart', loadChildren: './flowchart/flowchart.module#FlowchartModule' }
+    { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
+    { path: 'charts', loadChildren: () => import('./chart/chart.module').then(m => m.ChartModule) },
+    { path: 'form', loadChildren: () => import('./form/form.module').then(m => m.FormModule) },
+    { path: 'board', loadChildren: () => import('./board/board.module').then(m => m.BoardModule) },
+    { path: 'shop', loadChildren: () => import('./shop/shop.module').then(m => m.ShopModule) },
+    { path: 'grid-view', loadChildren: () => import('./grid-view/grid-view.module').then(m => m.GridViewModule) },
+    { path: 'flowchart', loadChildren: () => import('./flowchart/flowchart.module').then(m => m.FlowchartModule) }
   ];
    
   @NgModule({
