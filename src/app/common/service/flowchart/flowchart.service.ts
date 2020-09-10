@@ -1,54 +1,35 @@
-import { Injectable } from '@angular/core';
+import { Injectable, ElementRef } from '@angular/core';
+
+declare var mxGraph: any;
+declare var mxHierarchicalLayout: any;
+
+const mx = require('mxgraph')({
+  mxImageBasePath: 'assets/lib/mxgraph/images',
+  mxBasePath: 'assets/lib/mxgraph'
+});
 
 @Injectable({
   providedIn: 'root'
 })
-export class FlowchartService {
-    
-    requireMxGrapth: any = undefined;
-    container: any = undefined;
+export class FlowchartService {    
 
-    constructor() {
-        this.requireMxGrapth = require('./mxClient.min.js');
+  constructor() {
+  }
+
+  createFlowChart(container: ElementRef){
+    const graph = new mx.mxGraph(container.nativeElement);
+
+    try {
+      const parent = graph.getDefaultParent();
+      graph.getModel().beginUpdate();
+
+      const frame = graph.insertVertex(parent, '1', 'Frame', 0, 0, 70, 30);
+      const cab = graph.insertVertex(parent, '2', 'Cab', 0, 0, 70, 30);
+      graph.insertEdge(parent, '3', '', frame, cab);
+
+    } finally {
+      graph.getModel().endUpdate();
+      new mx.mxHierarchicalLayout(graph).execute(graph.getDefaultParent());
     }
-    
-    public test(container: any){
-        this.container = container;
-
-        // Checks if the browser is supported
-        if (!this.requireMxGrapth.mxClient.isBrowserSupported())
-        {
-            // Displays an error message if the browser is not supported.
-            this.requireMxGrapth.mxUtils.error('Browser is not supported!', 200, false);
-        }
-        else
-        {
-            // Disables the built-in context menu
-            this.requireMxGrapth.mxEvent.disableContextMenu(this.container);
-            
-            // Creates the graph inside the given container
-            var graph = this.requireMxGrapth.mxGraph(this.container);
-
-            // Enables rubberband selection
-            this.requireMxGrapth.mxRubberband(graph);
-            
-            // Gets the default parent for inserting new cells. This
-            // is normally the first child of the root (ie. layer 0).
-            var parent = graph.getDefaultParent();
-                            
-            // Adds cells to the model in a single step
-            graph.getModel().beginUpdate();
-            try
-            {
-                var v1 = graph.insertVertex(parent, null, 'Hello,', 20, 20, 80, 30);
-                var v2 = graph.insertVertex(parent, null, 'World!', 200, 150, 80, 30);
-                var e1 = graph.insertEdge(parent, null, '', v1, v2);
-            }
-            finally
-            {
-                // Updates the display
-                graph.getModel().endUpdate();
-            }
-        }
-    }
+  }
 }
