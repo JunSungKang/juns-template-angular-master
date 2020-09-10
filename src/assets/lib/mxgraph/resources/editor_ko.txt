@@ -1,0 +1,5 @@
+askZoom=확대 / 축소 (%) 입력
+properties=속성
+outline=개요
+tasks=작업
+help=도움

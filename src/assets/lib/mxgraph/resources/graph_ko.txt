@@ -1,0 +1,11 @@
+alreadyConnected=이미 연결된 노드
+containsValidationErrors=유효성 검사 오류 포함
+updatingDocument=문서를 업데이트하십시오. 잠시만 기다려주세요 ...
+updatingSelection=마커를 업데이트합니다. 잠시만 기다려주세요 ...
+collapse-expand=축소 / 확장
+doubleClickOrientation=방향을 변경하려면 두 번 클릭
+close=끝내다
+error=오류
+done=끝마친
+cancel=중단
+ok=성공
