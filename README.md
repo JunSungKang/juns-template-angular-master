@@ -1,19 +1,29 @@
 # Juns Template Angular8
 
-## 1. Install & Run
+## 1. Install & Run & Build
 `I not recommend global install`
 
-```
+### 1-1. install
+```console
 # npm install
+```
+
+### 1-2. run
+```console
 # npm start
 ```
 
+### 1-3. build
+```console
+# npm run build
+```
 
-## 2. Current version list (2020. 09. 09. angular 7 > angular 8)
 
-- Angular CLI 8.3.23
-- Node 10.13.0.
-- Angular 8.2.14.
+## 2. Current version list (2021. 04. 12. angular 8 > angular 11)
+
+- Angular CLI 11.2.8
+- Node 12,18,1.
+- Angular 11.2.9.
 
 > ## Update History
 > since- 2019
