@@ -1,4 +1,4 @@
-# Juns Template Angular8
+# Juns Template Angular11
 
 ## 1. Install & Run & Build
 `I not recommend global install`
@@ -19,7 +19,7 @@
 ```
 
 
-## 2. Current version list (2021. 04. 12. angular 8 > angular 11)
+## 2. Current version list
 
 - Angular CLI 11.2.8
 - Node 12,18,1.
