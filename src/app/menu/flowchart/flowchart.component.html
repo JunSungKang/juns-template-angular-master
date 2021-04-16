@@ -1,4 +1,13 @@
 <div id="contents">
-  <h1>Hi</h1>
-  <div #container style="width:400px;height:400px;background-color: aqua;"></div>
+  <div id="container" #container (keydown)="cellRemove($event)"></div>
+  
+  <hr/>
+  
+  <h4>▶ 도움말</h4>
+  <ul>
+    <li>노드 추가 : 미구현</li>
+    <li>노드 삭제 : 노드를 클릭하고 Delete Key를 누르기</li>
+    <li>엣지 연결 : 연결할 첫번째 노드를 클릭하고, 두번째 노드를 클릭하기</li>
+    <li>노드 위치 변경 : 노드를 드래그앤드롭을 통해 위치 변경 가능</li>
+  </ul>
 </div>

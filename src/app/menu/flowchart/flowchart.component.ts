@@ -1,4 +1,4 @@
-import {OnInit, AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
+import {OnInit, AfterViewInit, Component, ElementRef, ViewChild, HostListener} from '@angular/core';
 
 import { FlowchartService } from '../../common/service';
 
@@ -21,6 +21,14 @@ export class FlowchartComponent implements OnInit, AfterViewInit  {
   // View 가 모두 준비된 이 후, 플로우차트 그리기
   ngAfterViewInit(): void {
     this.flowchart.createFlowChart(this.container);
+  }
+
+  @HostListener('document:keydown', ['$event'])
+  cellRemove(event: KeyboardEvent): void {
+      console.log(event.key);
+      if (event.key == "Delete"){
+        this.flowchart.cellRemove();
+      }
   }
 
 }
