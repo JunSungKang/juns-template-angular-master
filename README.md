@@ -21,6 +21,6 @@
 
 ## 2. Current version list
 
-- Angular CLI 11.2.8
-- Node 12,18,1.
-- Angular 11.2.9.
+- Angular CLI 11.2.14
+- NodeJS 14.17.6.
+- Angular 11.2.14.
